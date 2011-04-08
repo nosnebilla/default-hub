@@ -9,7 +9,7 @@ module TicGitNG
       commands.each{|cmd| COMMANDS[cmd] = mod_name }
     end
 
-    register 'Assign', 'Assings a ticket to someone', 'assign'
+    register 'Assign', 'Assigns a ticket to someone', 'assign'
     register 'Attach', 'Attach file to ticket', 'attach'
     register 'Checkout', 'Checkout a ticket', 'checkout', 'co'
     register 'Comment', 'Comment on a ticket', 'comment'
