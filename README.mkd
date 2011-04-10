@@ -29,7 +29,7 @@ Required Ruby Gems: git
 
 To install these packages on a Debian system, or a Debian based system like Ubuntu, do
 
-    sudo aptitude install git ruby rubygems
+    sudo apt-get install git ruby rubygems
     sudo gem install git
 
 **ticgitweb**
@@ -40,9 +40,9 @@ Required Ruby Gems: git, sinatra, haml, sass
 
 To install these packages on a Debian system, or a Debian based system like Ubuntu, do
 
-    sudo aptitude install git ruby rubygems
-    sudo gem install git sinatra haml sass
-
+    sudo apt-get install git ruby rubygems
+    sudo gem install git sinatra haml
+    sudo gem install sass --pre
 
 
 
@@ -60,10 +60,12 @@ The git gem requires a git version of 1.6.0.0 or later, but on Debian stable, gi
 
 If these annoy you as they do me and you've set up [apt](http://jaqque.sbih.org/kplug/apt-pinning.html) [pinning](http://jeffwelling.github.com//2010/09/05/Apt-Pinning.html), you can do
 
-    $ sudo aptitude -t testing install git-core
+    $ sudo apt-get -t testing install git-core
 
 And those notices should go away.
 
+NB Ubuntu is already at Git 1.7 and does not have this issue. However the Git PPA [ppa:git-core/ppa](https://launchpad.net/~git-core/+archive/ppa) can be added to the package repository
+list to obtain Git updates if wanted.
 
 
 
