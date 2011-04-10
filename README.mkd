@@ -72,7 +72,7 @@ Installation on a Debian stable system.  Note that the command line interface fo
 
 To install TicGit-ng on your system, you can go one of two ways,
 
-    $ gem install TicGit-ng
+    $ sudo gem install TicGit-ng
 
 or, you can install it from source by downloading this repository building your own gem (see below).
 
@@ -392,6 +392,8 @@ To create a gem from your development copy of ticgit-ng, go to your ticgit-ng di
     rake gem
 
 This will create a pkg/ directory, which will contain a newly created ticgit-ng gem for you to install.
+
+More information on developing TicGit-ng and collaborating with other TicGit-ng developers at [here](https://github.com/jeffWelling/ticgit/wiki/Development)
 
 More information on developing TicGit-ng and collaborating with other TicGit-ng developers at [here](https://github.com/jeffWelling/ticgit/wiki/Development)
 

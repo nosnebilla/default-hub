@@ -20,10 +20,10 @@ module TicGitNG
     attr_accessor :out
 
     def initialize(args, path = '.', out = $stdout)
+      @out = out
       @args = args.dup
       @tic = TicGitNG.open(path, :keep_state => true)
       @options = OpenStruct.new
-      @out = out
 
       @out.sync = true # so that Net::SSH prompts show up
     rescue NoRepoFound
@@ -78,8 +78,9 @@ module TicGitNG
       end
     end
 
-    def get_editor_message(message_file = nil)
-      message_file = Tempfile.new('ticgitng_message').path if !message_file
+    def get_editor_message(comments = nil)
+      message_file = Tempfile.new('ticgitng_message').path
+      File.open(message_file, 'w') { |f| f.puts comments } if comments
 
       editor = ENV["EDITOR"] || 'vim'
       system("#{editor} #{message_file}");
