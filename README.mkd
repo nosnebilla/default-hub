@@ -407,10 +407,10 @@ More information on developing TicGit-ng and collaborating with other TicGit-ng 
 
 ### Alternatives ###
 
-ditz 
-bugs everywhere
-git-issues
-sd
+ditz   
+bugs everywhere  
+git-issues  
+sd  
 
 [Alternatives wiki page](https://github.com/jeffWelling/ticgit/wiki/Alternatives)
 
