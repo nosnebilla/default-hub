@@ -32,9 +32,7 @@ To install these packages on a Debian system, or a Debian based system like Ubun
     sudo apt-get install git ruby rubygems
     sudo gem install git
 
-After installing Gems it is necessary to update the PATH environment variable so that the scripts can be found. Issue the following command to the end of your .bachrc file or equivalent.
-
-    PATH=$PATH:/var/lib/gems/1.8/bin
+If you are installing rubygems for the first time or are troubleshooting, please see the note about installing rubygems below.
 
 **ticgitweb**
 
@@ -46,7 +44,15 @@ To install these packages on a Debian system, or a Debian based system like Ubun
 
     sudo apt-get install git ruby rubygems
     sudo gem install git sinatra haml
-    sudo gem install sass --pre
+    sudo gem install sass --pre  
+
+If you are installing rubygems for the first time or are troubleshooting, please see the note about installing rubygems below.  
+
+**A Note about installing rubygems**
+
+After installing rubygems it is necessary to update the PATH environment variable so that the scripts can be found. Add the following line to the end of your .bachrc file or equivalent.  This is also relevent if you are getting errors about "the program is not installed" even though you just installed it.  The reason this is required is because rubygems does not add the gems bin path to $PATH.
+
+    PATH=$PATH:/var/lib/gems/1.8/bin
 
 **A Note about rubygems**
 
