@@ -103,6 +103,7 @@ To get a list of all commands with short description:
         new                              Create a new ticket
         attach                           Attach file to ticket
         list                             List tickets
+        sync                           Sync tickets
      
     Common options:
         -v, --version                    Show the version number
@@ -136,6 +137,7 @@ The available commands are:
     ti comment  - add a comment to a ticket
     ti tag      - add or delete a tag from a ticket
     ti assign   - change to whom a ticket is assigned
+    ti sync     -  sync tickets with a remote repo
 
 
 ### Usage Examples ###
@@ -162,6 +164,7 @@ If you run it without arguments, it will tell you what is available to run
         new                              Create a new ticket
         attach                           Attach file to ticket
         list                             List tickets
+        sync                           Sync tickets
      
     Common options:
         -v, --version                    Show the version number
@@ -343,23 +346,23 @@ The process is much the same as above, except the rolls are reversed.  Once you 
 Replacing SOURCE_URL with the URL you were told to pull from, now you can see the changes they made, in your ticgit-ng branch.  You can easily publish these changes with a `git push origin` so anyone following your work can also see these changes.
 
 
-### Next generation collaboration ###
+### Next Generation collaboration ###
 
 Changes made by [Bruno Santos](http://github.com/pheres) to add a [`ti sync`](http://github.com/jeffWelling/ticgit/commit/7388386fab4fb12c36e6eeb7d19eaa4e4b16b853) command were integrated on February 15th 2011.  You can now use the `ti sync [options]` command to sync your tickets with anyone else you've added with `git remote add`.  To use `ti sync`, all you need to do is first make sure you've already added the remote source with `git remote add`, and then do
 
     $ ti sync --repo REMOTE_SOURCE
 
-if you want to pull their tickets into your ticgit-ng branch *and* push your tickets to their ticgit-ng branch, or
+if you want to pull their tickets into your ticgit-ng branch *and* push your tickets to their ticgit-ng branch, otherwise use
 
     $ ti sync --repo REMOTE_SOURCE --no-push
 
-if you want to pull their tickets into your ticgit-ng branch without pushing your tickets to their branch.
+if you want to pull their tickets into your ticgit-ng branch *without* pushing your tickets to their branch.
 
 More information on using ti sync can be gleemed from reviewing the [merge specs](https://github.com/jeffWelling/ticgit/blob/deving/spec/merging_spec.rb)
 
 ### Ticgitweb ###
 
-To run the Sinatra enabled web UI for your TicGit-ng repo, simply cd to your repository and run 'ticgitweb', or 'ticgitweb -p 3456' to change the port to something other than '4567', which is the Sinatra default.
+To run the Sinatra enabled web UI for your TicGit-ng repo, simply `cd` to your repository and run 'ticgitweb', or 'ticgitweb -p 3456' to change the port to something other than '4567', which is the Sinatra default.
 
 Here is what the Ticket listing looks like:
 
@@ -372,7 +375,9 @@ And here is an individual ticket:
 
 ## Development ##
 
-The original author had used rspec to write specs for ticgit-ng, but one of the maintainers since then switched it over to bacon[[1](http://www.ruby-forum.com/topic/137928)][[2](http://www.ruby-forum.com/topic/172139)][[3](http://testanything.org/wiki/index.php/Testing_with_Ruby)] and I haven't been too inclined to switch it back.
+TicGit-ng uses rspec, tests are located in the spec/ directory.
+
+More information on the current development of TicGit-ng can be found [here](https://github.com/jeffWelling/ticgit/wiki/Development).
 
 ### Prerequisites ###
 
