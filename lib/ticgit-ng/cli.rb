@@ -231,8 +231,8 @@ module TicGitNG
       end
     end
 
-    def puts(*strings)
-      @out.puts(*strings)
+    def puts(strings, debug_value=0)
+      @out.puts(strings) if debug_value==TicGitNG::DEBUG
     end
   end
 end
