@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Dealing with merge conflicts</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="keywords" content="conflict, conflicts, merge, rebase, unmerged, abort, solve, no branch"/>
+	<meta name="description" content="Learn how to solve merge conflicts with Tower."/>
+	<link href="../sty/topicPages.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../sty/jquery.fancybox-1.3.2.css" rel="stylesheet" type="text/css" media="all"/>
+	<script type="text/javascript" src="../scripts/jquery.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.fancybox-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
+
+</head>
+
+<body id="apple-pd">
+	<!--top navigation BEGIN-->
+	<div id="navbox" class="gradient">
+		<a name="Refs_Branches_Conflicts"></a>
+		<div id="navleftbox">
+			<a class="navlink_left" href="help:anchor='access' bookID=Tower Help">Home</a>
+		</div>
+	</div>
+	<!--top navigation END-->
+
+	<!--page header BEGIN-->
+	<div id="headerbox">
+		<div id="iconbox"><img id="iconimg" src="../shrd/towerIcon32x32.png" alt="Tower Icon" height="32" width="32" /></div>
+		<div id="pagetitle">
+			<h1>Dealing with merge conflicts</h1>
+		</div>
+	</div>
+	<!--page header END-->
+	
+	<div id="introbox">
+		<div class="introprimtext">
+			<p class="introprimtextlongtext">During merge (or rebase) operations conflicts can occur. Although Git is very good at solving most issues by itself there are cases when you have to take action. An example situation is when the same line in the same file was edited in both branches - then you need to tell Git how to solve this issue.</p>
+			<p class="introprimtextlongtext">Tower will inform you if you currently have a conflict that needs your attention: the conflicted branch is marked with a yellow warning sign icon in the Sidebar. More importantly, when you're viewing your HEAD branch in the Browse area, a yellow colored area just above the file list tells you that "x conflicts need to be solved.".<br /><span class="intronoteprefix">NOTE:</span>Conflicts during rebase operations will temporarily create a "(no branch) HEAD" item in the Sidebar.</p>
+			<p class="introprimtextlongtext">To continue working you must solve the conflicts in all concerned files.</p>
+			<!--taskbox BEGIN-->
+			<div class="taskboxwrapper">
+				<div class="taskbox shadow">
+					<div class="taskframe taskcontent">
+						<h2>Step 1: Show Details</h2>
+						<p class="introprimtextlongtext">Expand the conflicts information area by clicking "Show Details". <br /> <img class="zoomable previewLarge" src="../shrd/refs/refs_branches_merge_conflict.png" /> </p>
+					</div>
+				</div>
+						
+				<div class="taskbox shadow">
+					<div class="taskframe taskcontent">
+						<h2>Step 2: Solve each conflicted file</h2>
+						<p class="introprimtextlongtext">Select a file from the list and inspect it in the details area below. The "mine/theirs" view mode is best suited to see how the versions from the merged branches differ. Perform the following actions for each file listed in the table: </p>
+						<p class="introprimtextlongtext"><b>A)</b> In very simple cases you might be able to directly decide that one of the versions (mine or theirs) is correct. You can tell Tower by right-clicking the file and choosing "Resolve &lt;file name&gt; Using Mine" or "Resolve &lt;file name&gt; Using Theirs". Continue with the next file or step 3. <br /> <img class="zoomable previewLarge" src="../shrd/refs/refs_branches_merge_resolve_internal.png" /></p>
+						<p class="introprimtextlongtext"><b>B)</b> In most cases, however, you'll want to solve the conflict in a merge tool. <br /> <img class="zoomable previewLarge" src="../shrd/refs/refs_branches_merge_resolve_external.png" /> </p>
+						<ol class="tasklistnumbered">
+							<li><p class="numberparagraph">Click the "Merge Tool" button to open the file in an external merge tool.<br /><span class="intronoteprefix">NOTE:</span>You can configure which merge tool to use in Tower's preferences dialog. Be sure that the tool you're using is capable of dealing with merges. Not every diff tool supports merging!</p></li>
+							<li><p class="numberparagraph">After having decided how to solve the conflict save your solution in the merge tool and close it.</p></li>
+							<li><p class="numberparagraph">Back in Tower, you must mark the file as "solved". You can do that by right-clicking it in the list and choosing "Mark &lt;file name&gt; as Resolved".</p></li>
+						</ol>
+					</div>
+				</div>
+				
+				<div class="taskbox shadow">
+					<div class="taskframe taskcontent">
+						<h2>Step 3: Commit resolution</h2>
+						<p class="introprimtextlongtext">After having solved all conflicts you must commit your resolution. Do so by clicking the "Commit" button - in the appearing commit sheet, a suitable merge commit message is already prefilled for you. <br /> <img class="zoomable previewLarge" src="../shrd/refs/refs_branches_merge_resolve_commit.png" /> </p>
+					</div>
+				</div>
+
+			</div>
+			<!--taskbox END-->
+		</div>
+	</div>
+
+	<div id="outrobox">
+		<p class="outroprimtextlongtext"><span class="outroimportantprefix">IMPORTANT:</span>When rebasing, multiple merge conflicts can occur in sequence. You have to solve each conflict in turn and complete each one with the "Continue" button.</p>
+		<p class="outroprimtextlongtext"><span class="outronoteprefix">NOTE:</span>You can always abort the merge (or rebase) by clicking the "Abort Merge" ("Abort Rebase") button in the conflict information bar. This resets your HEAD branch to the state it was before the merge began. <br /> <img class="zoomable previewMedium" src="../shrd/refs/refs_branches_merge_resolve_abort.png" /> </p>
+	</div>
+	
+	<div id="rule"><hr /></div>
+	
+	<div id="linkinternalbox">
+		<h3>Related Topics</h3>
+		<p class="linkinternal"><a href="help:anchor='Refs_Branches_MergeRebase' bookID=Tower Help">Merging and rebasing</a></p>
+		<p class="linkinternal"><a href="help:anchor='Refs_Branches_DetachedOrphaned' bookID=Tower Help">About detached HEADs and orphaned branches</a></p>
+	</div>
+	
+</body>
+</html>

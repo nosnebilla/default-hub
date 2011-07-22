@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>About detached HEADs and orphaned branches</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="keywords" content="detached, head, HEAD, orphan, orphaned, no branch"/>
+	<meta name="description" content="Learn about 'detached HEAD' and 'orphaned' branches."/>
+	<link href="../sty/topicPages.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../sty/jquery.fancybox-1.3.2.css" rel="stylesheet" type="text/css" media="all"/>
+	<script type="text/javascript" src="../scripts/jquery.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.fancybox-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
+
+</head>
+
+<body id="apple-pd">
+	<!--top navigation BEGIN-->
+	<div id="navbox" class="gradient">
+		<a name="Refs_Branches_DetachedOrphaned"></a>
+		<div id="navleftbox">
+			<a class="navlink_left" href="help:anchor='access' bookID=Tower Help">Home</a>
+		</div>
+	</div>
+	<!--top navigation END-->
+
+	<!--page header BEGIN-->
+	<div id="headerbox">
+		<div id="iconbox"><img id="iconimg" src="../shrd/towerIcon32x32.png" alt="Tower Icon" height="32" width="32" /></div>
+		<div id="pagetitle">
+			<h1>About detached HEADs and orphaned branches</h1>
+		</div>
+	</div>
+	<!--page header END-->
+	
+	<div id="introbox">
+		<div class="introprimtext">
+			<p class="introprimtextlongtext">There are some exceptional states that branches can be in. You should rarely encounter them - but in case you do you can read up on them, here.</p>
+			<br />
+			
+			<!-- AppleSegStart="Detached HEAD" -->
+			<!-- AppleSegDescription="Learn what a 'detached HEAD' is." -->
+			<!-- AppleSegKeywords="detached, head, HEAD, no branch" -->
+			<div id="pagetitle"> <h1>Detached HEAD</h1> </div>
+			<p class="introprimtextlongtext">Normally the HEAD pointer in Git stores the name of the branch you are currently working on. However, the "checkout" command is flexible enough to not only check out branches: when you check out anything other than a local branch name (for example a tag, a remote branch, or a commit's SHA1-ID that is not the tip of any particular branch) you are left with an anonymous branch - called a "detached HEAD".<br />You can commit in this situation but must keep in mind that no named branch will get updated hereby. This can lead to losing the commit as soon as you check out something else because it might not be referenced by anything.</p>
+			<p class="introprimtextlongtext">Create or check out a branch to get back to a "normal" working situation.</p>
+			<p class="introprimtextlongtext"><span class="outronoteprefix">NOTE:</span>A detached HEAD can be part of a rebase operation: If a merge conflict occurs during the rebase, a special "(no branch) HEAD" item will appear in the Sidebar. After solving all rebase conflicts, the temporary item will disappear again.</p>
+			<!-- AppleSegEnd -->
+			<br />
+			
+			<!-- AppleSegStart="Orphaned branch" -->
+			<!-- AppleSegDescription="Learn what an 'orphaned branch' is." -->
+			<!-- AppleSegKeywords="orphan, orphaned" -->
+			<div id="pagetitle"> <h1>Orphaned branch</h1> </div>
+			<p class="introprimtextlongtext">Normally, branches in Git share a common commit at some point in history. An orphaned branch is an exception: it's an empty branch starting with absolutely no commits.<br />The first commit on this branch will therefore have no parent commit and will be the start of a new history that is totally disconnected from all other branches and commits in this repository.</p>
+			<!-- AppleSegEnd -->
+		</div>
+	</div>
+
+	<div id="outrobox">
+		<p class="outroprimtextlongtext"></p>
+	</div>
+	
+	<div id="rule"><hr /></div>
+	
+	<div id="linkinternalbox">
+		<h3>Related Topics</h3>
+		<p class="linkinternal"><a href="help:anchor='Refs_Branches_MergeRebase' bookID=Tower Help">Merging &amp; rebasing</a></p>
+	</div>
+	
+</body>
+</html>
