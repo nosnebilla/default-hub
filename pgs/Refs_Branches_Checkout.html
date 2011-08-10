@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Checking Out a Branch</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="keywords" content="checkout, check out, working branch, working copy"/>
+	<meta name="description" content="Learn how to check out a branch in Tower."/>
+	<link href="../sty/topicPages.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../sty/jquery.fancybox-1.3.2.css" rel="stylesheet" type="text/css" media="all"/>
+	<script type="text/javascript" src="../scripts/jquery.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.fancybox-1.3.2.pack.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
+
+</head>
+
+<body id="apple-pd">
+	<!--top navigation BEGIN-->
+	<div id="navbox" class="gradient">
+		<a name="Refs_Branches_Checkout"></a>
+		<div id="navleftbox">
+			<a class="navlink_left" href="help:anchor='access' bookID=Tower Help">Home</a>
+		</div>
+	</div>
+	<!--top navigation END-->
+
+	<!--page header BEGIN-->
+	<div id="headerbox">
+		<div id="iconbox"><img id="iconimg" src="../shrd/towerIcon32x32.png" alt="Tower Icon" height="32" width="32" /></div>
+		<div id="pagetitle">
+			<h1>Checking Out a Branch</h1>
+		</div>
+	</div>
+	<!--page header END-->
+	
+	<div id="introbox">
+		<div class="introprimtext">
+			<p class="introprimtextlongtext">In Git, checking out a branch means making it your current working branch. At the same time, the files associated with that branch will be put into your working copy directory.</p>
+			<p class="introprimtextlongtext"><span class="introimportantprefix">IMPORTANT:</span>Note that you can only check out local branches, not remote ones.</p>
+			
+			<!--taskbox BEGIN-->
+			<div class="taskboxwrapper">
+				<div class="taskbox shadow">
+					<div class="taskframe taskcontent">
+						<h2>To check out a branch</h2>
+						<p class="introprimtextlongtext">Perform one of the following actions:</p>
+						<ul class="tasklistbulleted">
+							<li><p class="listparagraph">Double-click the local branch you want to check out in the Sidebar.</p></li>
+							<li><p class="listparagraph">Right-click the local branch you want to check out in the Sidebar and select "Checkout branch" from the contextual menu.</p></li>
+							<li><p class="listparagraph">Select the local branch you want to check out in the Sidebar and then click the "Checkout" button in the toolbar. <br /> <img class="zoomable previewLarge" src="http://git-tower.com/files/applicationHelp/img/browse/refs_branches_checkout.png" /></p></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--taskbox END-->
+		</div>
+	</div>
+
+	<div id="outrobox">
+		<p class="outroprimtextlongtext"><span class="outronoteprefix">NOTE:</span>Git won't let you switch branches if you have uncommitted changes in your working copy directory that would conflict with the branch's files you're trying to check out. In that case, you can use the Stash (see <a href="help:anchor='Browse_Stash' bookID=Tower Help">"Using the Stash"</a>) to save your current changes and get a clean working copy. <br /> <img class="zoomable previewSmall" src="http://git-tower.com/files/applicationHelp/img/browse/refs_branches_checkout_error.png" /> </p>
+	</div>
+	
+	<div id="rule"><hr /></div>
+	
+	<div id="linkinternalbox">
+		<h3>Related Topics</h3>
+		<p class="linkinternal"><a href="help:anchor='Refs_Branches_Create' bookID=Tower Help">Creating a new branch</a></p>
+		<p class="linkinternal"><a href="help:anchor='Browse_Stash' bookID=Tower Help">Using the Stash</a></p>
+	</div>
+	
+</body>
+</html>
