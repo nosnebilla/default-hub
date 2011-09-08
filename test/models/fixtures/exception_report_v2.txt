@@ -1,0 +1,44 @@
+App Name: Tower
+App Version: 1.1.1
+
+OS Version: Mac OS X 10.6.7 (10J869)
+Kernel Version: Darwin 10.7.0
+Model Name: MacBookPro5,1
+Model Identifier: MacBook Pro
+Processor Name: Intel Core 2 Duo
+Processor Speed: 2.4 GHz
+Total Number Of Processors: 1
+Total Number Of Cores: 2
+Physical Memory: 4 GB
+
+Exception Type: Exception Name
+Exception Reason: The reason is because we raised the exception
+Main Thread: YES
+Stack Trace:
+0   CoreFoundation                      0x95c156ba __raiseError + 410
+1   libobjc.A.dylib                     0x91f60509 objc_exception_throw + 56
+2   Tower                               0x00027960 0x0 + 162144
+3   AppKit                              0x90129c46 -[NSApplication sendAction:to:from:] + 112
+4   AppKit                              0x90209465 -[NSControl sendAction:to:] + 108
+5   AppKit                              0x90204f12 -[NSCell _sendActionFrom:] + 169
+6   AppKit                              0x90204209 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 1808
+7   AppKit                              0x902598a1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 524
+8   AppKit                              0x90202c5f -[NSControl mouseDown:] + 812
+9   AppKit                              0x90200c68 -[NSWindow sendEvent:] + 5549
+10  AppKit                              0x90119817 -[NSApplication sendEvent:] + 6431
+11  AppKit                              0x90362863 -[NSApplication _realDoModalLoop:peek:] + 806
+12  AppKit                              0x9035c50e -[NSApplication runModalSession:] + 79
+13  Tower                               0x0004702b 0x0 + 290859
+14  Tower                               0x000d32c1 0x0 + 864961
+15  AppKit                              0x90129c46 -[NSApplication sendAction:to:from:] + 112
+16  AppKit                              0x90209465 -[NSControl sendAction:to:] + 108
+17  AppKit                              0x90204f12 -[NSCell _sendActionFrom:] + 169
+18  AppKit                              0x90204209 -[NSCell trackMouse:inRect:ofView:untilMouseUp:] + 1808
+19  AppKit                              0x902598a1 -[NSButtonCell trackMouse:inRect:ofView:untilMouseUp:] + 524
+20  AppKit                              0x90202c5f -[NSControl mouseDown:] + 812
+21  AppKit                              0x90200c68 -[NSWindow sendEvent:] + 5549
+22  AppKit                              0x90119817 -[NSApplication sendEvent:] + 6431
+23  AppKit                              0x900ad2a7 -[NSApplication run] + 917
+24  AppKit                              0x900a52d9 NSApplicationMain + 574
+25  Tower                               0x00002986 0x0 + 10630
+26  ???                                 0x00000002 0x0 + 2

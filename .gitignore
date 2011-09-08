@@ -1,0 +1,5 @@
+.DS_Store
+config/environment
+releases/*
+tmp/*
+tmp/db/*

@@ -1,0 +1,38 @@
+App Name: Tower
+App Version: 1.0.8
+
+OS Version: Mac OS X 10.6.6 (10J567)
+Kernel Version: Darwin 10.6.0
+Model Name: MacPro5,1
+Model Identifier: Mac Pro
+Processor Name: Quad-Core Intel Xeon
+Processor Speed: 2.4 GHz
+Total Number Of Processors: 2
+Total Number Of Cores: 8
+Physical Memory: 8 GB
+
+Exception Type: NSInvalidArgumentException
+Exception Reason: *** -[NSOperationQueue addOperation:]: operation is already enqueued on a queue
+Main Thread: YES
+Stack Trace:
+0x9005ad24
+0x906d2509
+0x948823e8
+0x9488235a
+0x903d5a49
+0x331e1
+0xd1bbf
+0xd1a0d
+0x903c4ab1
+0x947ecadb
+0x947ea464
+0x947ea291
+0x900a7004
+0x900a6dbb
+0x900a6c40
+0x9773d78d
+0x9773cfce
+0x976ff247
+0x976f72d9
+0x2592
+0x2
