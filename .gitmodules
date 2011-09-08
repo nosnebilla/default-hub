@@ -1,0 +1,3 @@
+[submodule "lib/actionpack"]
+	path = lib/actionpack
+	url = /Users/ben/development/gittestrepos/testrepos/.submodule.git
