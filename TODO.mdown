@@ -1,0 +1,16 @@
+# App
+
+* Setup per machine (via Exceptions?)
+  * Check PHP settings/extensions
+  * Check Permissions
+  * Check Database
+* Controller Generator
+* TestRequest + Tests Generator
+* Better Deploy Script
+* Support for compressed JS/CSS (on deploy?)
+
+# Active Record
+
+* Relations
+* Read fields from Schema?
+* Database migration... ?

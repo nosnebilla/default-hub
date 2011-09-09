@@ -1,0 +1,286 @@
+@CHARSET "UTF-8";
+
+/* ******************** defaults */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal 1em/1.25em helvetica,arial,sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover, a:focus {
+  color: #000;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+}
+
+p {
+}
+
+img {
+  border: 0px none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+abbr {
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  display: none;
+}
+
+.nodisplay {
+  position: absolute;
+  left: -1000px !important;
+  top: -1000px !important;
+  width: 0px !important;
+  height: 0px !important;
+  overflow: hidden;
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  display: block;
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  margin: -1px 0 0 0;
+}
+
+/* forms */
+
+form {
+  margin: 1em 0;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+input, select {
+}
+
+.checkbox, .radio {
+  width: auto;
+}
+
+input:focus, textarea:focus {
+  background-color: #fff;
+}
+
+.button:focus {
+  background-color: transparent;
+}
+
+.error {
+  border: 1px solid #b50000;
+  background-color: #e02f2f;
+  color: white;
+  padding: 1em;
+}
+
+/* ******************** page blocks */
+
+#body {
+  width: 60em;
+  margin: 2em auto;
+}
+
+#header {
+  margin: 2em 0;
+}
+
+h1 {
+  font: bold 2.5em/1.25em georgia,arial,helvetica,sans-serif;
+}
+
+h1 a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1 a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+h1 a:hover, a:focus {
+  color: #333;
+  text-decoration: underline;
+}
+
+h2 {
+  font: bold 1.5em/1.25em georgia,arial,helvetica,sans-serif;
+  margin: 1em 0;
+}
+
+#contents {
+}
+
+#contents li a {
+  color: #555;
+  padding: .5em 1em;
+}
+
+#contents li a.unread {
+  color: black;
+  font-weight: bold;
+}
+
+#contents li a:hover {
+  color: black;
+  background: #eee;
+}
+
+#contents dl {
+	width: 40em;
+	margin: 1em 0;
+	padding: .5em 1em;
+}
+
+#contents dl dt {
+  clear: left;
+	float: left;
+	width: 12em;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+	font-weight: bold;
+}
+
+#contents dl dd {  
+  float: left;
+	width: 18em;
+	margin: 0;
+	padding: 5px;
+	border-top: 1px solid #999;
+}
+
+#col-product {
+  width: 75px;
+}
+
+#col-reason {
+  width: 250px;
+}
+
+#col-date {
+  width: 100px;
+}
+
+#col-versions {
+  width: 125px;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table th {
+  border-bottom: 1px solid #999;
+}
+
+table caption {
+  display: none;
+}
+
+table tfoot {
+  display: none;
+}
+
+table a {
+  color: #608ec2;
+  text-decoration: none;
+}
+
+table a:visited {
+  color: #608ec2;
+  text-decoration: none;
+}
+
+table a:hover, table a:focus {
+  color: #608ec2;
+  text-decoration: underline;
+}
+
+table td, table th {
+  padding: .5em 1em;
+}
+
+table .reason {
+  text-overflow: auto;
+}
+
+table .count {
+  text-align: center;
+}
+
+table .badge {
+  color: white;
+  background-color: #ccc;
+  padding: .3em .6em;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+#form-report {
+  width: 600px;
+  height: 120px;
+  border: 1px solid #cccccc;
+  padding: .5em;
+  font: normal .7em/1.25em monaco,courier,sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+#form-report:focus {
+  background-color: #f5f5f5;
+}
+
+/* EOF */

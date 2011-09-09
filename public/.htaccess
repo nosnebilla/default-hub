@@ -1,0 +1,25 @@
+# Error documents
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
+#RedirectMatch permanent ^/somedir/?$ http://www.domain.com/
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # RewriteBase /
+
+  # Home
+  RewriteRule ^/?$ /dispatcher.php?controller=home [QSA]
+  
+  # Crash Reports
+  RewriteRule ^crashreports$ /dispatcher.php?controller=crash_reports [QSA]
+  RewriteRule ^crashreports/([0-9]+)$ /dispatcher.php?controller=crash_reports&action=show&id=$1 [QSA]
+  
+  # Symbolicate
+  RewriteRule ^symbolicate$ /dispatcher.php?controller=crash_reports&action=symbolicate [QSA]
+  
+  # Error Cases
+  RewriteRule ^errorcases$ /dispatcher.php?controller=error_cases [QSA]
+  RewriteRule ^errorcases/([0-9]+)$ /dispatcher.php?controller=error_cases&action=show&id=$1 [QSA]
+  
+</IfModule>

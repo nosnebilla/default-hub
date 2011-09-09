@@ -1,0 +1,106 @@
+[22-Mar-2011 10:05:35] PHP Fatal error:  Uncaught exception 'Exception' with message 'Temp directory <code>/Users/alex/Development/php_app/tmp</code> is not writable for user <code>_www</code>. Please change the file permissions on the temp directory.' in /Users/alex/Development/php_app/config/init/tmp_files.php:8
+Stack trace:
+#0 /Users/alex/Development/php_app/app/init.php(28): require_once()
+#1 /Users/alex/Development/php_app/public/dispatcher.php(4): require_once('/Users/alex/Dev...')
+#2 {main}
+  thrown in /Users/alex/Development/php_app/config/init/tmp_files.php on line 8
+[22-Mar-2011 10:05:58] PHP Fatal error:  Uncaught exception 'Exception' with message 'Database '/Users/alex/Development/php_app/tmp/db/development.sqlite3' does not exist.' in /Users/alex/Development/php_app/config/init/db.php:22
+Stack trace:
+#0 /Users/alex/Development/php_app/app/init.php(29): require_once()
+#1 /Users/alex/Development/php_app/public/dispatcher.php(4): require_once('/Users/alex/Dev...')
+#2 {main}
+  thrown in /Users/alex/Development/php_app/config/init/db.php on line 22
+[22-Mar-2011 10:06:08] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[22-Mar-2011 10:06:37] PHP Fatal error:  Uncaught exception 'Exception' with message 'Database '/Users/alex/Development/php_app/tmp/db/development.sqlite3' does not exist.' in /Users/alex/Development/php_app/config/init/db.php:22
+Stack trace:
+#0 /Users/alex/Development/php_app/app/init.php(29): require_once()
+#1 /Users/alex/Development/php_app/public/dispatcher.php(4): require_once('/Users/alex/Dev...')
+#2 {main}
+  thrown in /Users/alex/Development/php_app/config/init/db.php on line 22
+[22-Mar-2011 10:07:08] PHP Fatal error:  Uncaught exception 'Exception' with message 'Database '/Users/alex/Development/php_app/tmp/db/development.sqlite3' does not exist.' in /Users/alex/Development/php_app/config/init/db.php:22
+Stack trace:
+#0 /Users/alex/Development/php_app/app/init.php(29): require_once()
+#1 /Users/alex/Development/php_app/public/dispatcher.php(4): require_once('/Users/alex/Dev...')
+#2 {main}
+  thrown in /Users/alex/Development/php_app/config/init/db.php on line 22
+[22-Mar-2011 10:07:08] PHP Fatal error:  Uncaught exception 'Exception' with message 'Database '/Users/alex/Development/php_app/tmp/db/development.sqlite3' does not exist.' in /Users/alex/Development/php_app/config/init/db.php:22
+Stack trace:
+#0 /Users/alex/Development/php_app/app/init.php(29): require_once()
+#1 /Users/alex/Development/php_app/public/dispatcher.php(4): require_once('/Users/alex/Dev...')
+#2 {main}
+  thrown in /Users/alex/Development/php_app/config/init/db.php on line 22
+[22-Mar-2011 10:07:15] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[22-Mar-2011 10:07:18] PHP Fatal error:  Uncaught exception 'Exception' with message 'Database '/Users/alex/Development/php_app/tmp/db/development.sqlite3' does not exist.' in /Users/alex/Development/php_app/config/init/db.php:22
+Stack trace:
+#0 /Users/alex/Development/php_app/app/init.php(29): require_once()
+#1 /Users/alex/Development/php_app/public/dispatcher.php(4): require_once('/Users/alex/Dev...')
+#2 {main}
+  thrown in /Users/alex/Development/php_app/config/init/db.php on line 22
+[22-Mar-2011 16:06:55] PHP Notice:  Undefined variable: request in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 70
+[22-Mar-2011 16:06:55] PHP Notice:  Undefined variable: response in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 70
+[22-Mar-2011 16:06:55] PHP Catchable fatal error:  Argument 1 passed to ActionController::__construct() must be an instance of Request, null given, called in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 70 and defined in /Users/alex/Development/php_app/lib/action_pack/lib/action_controller.php on line 18
+[22-Mar-2011 16:18:59] PHP Catchable fatal error:  Argument 1 passed to ErrorsController::exception() must be an instance of Exception, none given, called in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 79 and defined in /Users/alex/Development/php_app/app/controllers/errors_controller.php on line 22
+[22-Mar-2011 16:23:07] PHP Catchable fatal error:  Argument 1 passed to ErrorsController::exception() must be an instance of Exception, none given, called in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 84 and defined in /Users/alex/Development/php_app/app/controllers/errors_controller.php on line 22
+[22-Mar-2011 16:23:17] PHP Catchable fatal error:  Argument 1 passed to ErrorsController::exception() must be an instance of Exception, array given, called in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 84 and defined in /Users/alex/Development/php_app/app/controllers/errors_controller.php on line 22
+[22-Mar-2011 16:23:18] PHP Catchable fatal error:  Argument 1 passed to ErrorsController::exception() must be an instance of Exception, array given, called in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 84 and defined in /Users/alex/Development/php_app/app/controllers/errors_controller.php on line 22
+[22-Mar-2011 16:39:36] PHP Notice:  Undefined variable: controller in /Users/alex/Development/php_app/lib/action_pack/lib/action_controller.php on line 74
+[22-Mar-2011 16:39:36] PHP Notice:  Undefined variable: controller in /Users/alex/Development/php_app/lib/action_pack/lib/action_controller.php on line 74
+[22-Mar-2011 16:39:36] PHP Fatal error:  Uncaught exception 'TemplateNotFoundViewException' with message '/.html.php' in /Users/alex/Development/php_app/lib/action_pack/lib/view.php:103
+Stack trace:
+#0 /Users/alex/Development/php_app/lib/action_pack/lib/view.php(76): View->renderTemplate('/.html.php', Array)
+#1 /Users/alex/Development/php_app/lib/action_pack/lib/action_controller.php(254): View->render()
+#2 /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php(100): ActionController->renderView()
+#3 /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php(57): Dispatcher->run('errors', 'exception', Array)
+#4 /Users/alex/Development/php_app/public/dispatcher.php(13): Dispatcher->dispatch(Object(Request), Object(Response))
+#5 {main}
+  thrown in /Users/alex/Development/php_app/lib/action_pack/lib/view.php on line 103
+[22-Mar-2011 16:39:48] PHP Fatal error:  Uncaught exception 'TemplateNotFoundViewException' with message '/.html.php' in /Users/alex/Development/php_app/lib/action_pack/lib/view.php:103
+Stack trace:
+#0 /Users/alex/Development/php_app/lib/action_pack/lib/view.php(76): View->renderTemplate('/.html.php', Array)
+#1 /Users/alex/Development/php_app/lib/action_pack/lib/action_controller.php(254): View->render()
+#2 /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php(100): ActionController->renderView()
+#3 /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php(57): Dispatcher->run('errors', 'exception', Array)
+#4 /Users/alex/Development/php_app/public/dispatcher.php(13): Dispatcher->dispatch(Object(Request), Object(Response))
+#5 {main}
+  thrown in /Users/alex/Development/php_app/lib/action_pack/lib/view.php on line 103
+[22-Mar-2011 17:01:23] PHP Parse error:  syntax error, unexpected ')' in /Users/alex/Development/php_app/app/controllers/errors_controller.php on line 10
+[22-Mar-2011 17:01:32] PHP Fatal error:  Uncaught exception 'MissingActionDispatcherException' with message 'Cannot find action `http_error` in controller `ErrorsController`.' in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php:87
+Stack trace:
+#0 /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php(60): Dispatcher->run('errors', 'http_error', Array)
+#1 /Users/alex/Development/php_app/public/dispatcher.php(13): Dispatcher->dispatch(Object(Request), Object(Response))
+#2 {main}
+  thrown in /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php on line 87
+[22-Mar-2011 17:02:46] PHP Fatal error:  Uncaught exception 'TemplateNotFoundViewException' with message '/Users/alex/Development/php_app/public/404.html.html.php' in /Users/alex/Development/php_app/lib/action_pack/lib/view.php:103
+Stack trace:
+#0 /Users/alex/Development/php_app/lib/action_pack/lib/view.php(76): View->renderTemplate('/Users/alex/Dev...', Array)
+#1 /Users/alex/Development/php_app/lib/action_pack/lib/action_controller.php(262): View->render()
+#2 /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php(105): ActionController->renderView()
+#3 /Users/alex/Development/php_app/lib/action_pack/lib/dispatcher.php(60): Dispatcher->run('errors', 'http_error', Array)
+#4 /Users/alex/Development/php_app/public/dispatcher.php(13): Dispatcher->dispatch(Object(Request), Object(Response))
+#5 {main}
+  thrown in /Users/alex/Development/php_app/lib/action_pack/lib/view.php on line 103
+[22-Mar-2011 17:13:26] PHP Warning:  include_once(/Users/alex/Development/php_app/lib/markdown/markdown.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /Users/alex/Development/php_app/app/helpers/application_view_helpers.php on line 64
+[22-Mar-2011 17:13:26] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/Users/alex/Development/php_app/lib/markdown/markdown.php' for inclusion (include_path='.:/opt/local/lib/php') in /Users/alex/Development/php_app/app/helpers/application_view_helpers.php on line 64
+[22-Mar-2011 17:13:26] PHP Fatal error:  Call to undefined function Markdown() in /Users/alex/Development/php_app/app/helpers/application_view_helpers.php on line 65
+[23-Mar-2011 14:09:04] PHP Fatal error:  Call to undefined function crash_report_url() in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/index.html.php on line 2
+[23-Mar-2011 14:15:04] PHP Parse error:  syntax error, unexpected '/' in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/index.html.php on line 2
+[23-Mar-2011 14:15:14] PHP Fatal error:  Call to undefined function shorthash() in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/index.html.php on line 2
+[23-Mar-2011 14:15:18] PHP Fatal error:  Call to undefined function shorthash() in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/index.html.php on line 2
+[23-Mar-2011 14:15:38] PHP Fatal error:  main() [<a href='function.require'>function.require</a>]: Failed opening required '/Users/alex/Development/webapp_exceptions_client/app/helpers/crash_reports_helpers.php' (include_path='.:/opt/local/lib/php') in /Users/alex/Development/webapp_exceptions_client/app/controllers/crash_reports_controller.php on line 4
+[23-Mar-2011 14:50:39] PHP Parse error:  syntax error, unexpected T_RETURN in /Users/alex/Development/webapp_exceptions_client/app/helpers/crash_reports_helpers.php on line 23
+[23-Mar-2011 14:50:53] PHP Fatal error:  Class 'CrashReport' not found in /Users/alex/Development/webapp_exceptions_client/app/controllers/crash_reports_controller.php on line 9
+[23-Mar-2011 14:51:19] PHP Parse error:  syntax error, unexpected T_PRIVATE, expecting T_VARIABLE in /Users/alex/Development/webapp_exceptions_client/app/models/crash_report.php on line 18
+[23-Mar-2011 15:15:29] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/index.html.php on line 3
+[23-Mar-2011 15:16:09] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/index.html.php on line 3
+[23-Mar-2011 15:16:10] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/index.html.php on line 3
+[23-Mar-2011 15:17:56] PHP Fatal error:  Call to undefined method SimpleXMLElement::toString() in /Users/alex/Development/webapp_exceptions_client/app/models/crash_report.php on line 65
+[23-Mar-2011 15:41:40] PHP Parse error:  syntax error, unexpected '}' in /Users/alex/Development/webapp_exceptions_client/app/helpers/crash_reports_helpers.php on line 31
+[11-May-2011 10:49:17] PHP Fatal error:  Call to undefined function symbolicate() in /Users/alex/Development/webapp_exceptions_client/app/views/error_cases/show.html.php on line 19
+[11-May-2011 10:50:20] PHP Fatal error:  Call to undefined function symbolicate() in /Users/alex/Development/webapp_exceptions_client/app/views/error_cases/show.html.php on line 19
+[11-May-2011 11:59:58] PHP Fatal error:  Class 'CrashReport' not found in /Users/alex/Development/webapp_exceptions_client/app/models/error_case.php on line 101
+[11-May-2011 12:16:56] PHP Fatal error:  Call to undefined function symbolicate_url() in /Users/alex/Development/webapp_exceptions_client/app/views/home/index.html.php on line 4
+[11-May-2011 12:16:57] PHP Fatal error:  Call to undefined function symbolicate_url() in /Users/alex/Development/webapp_exceptions_client/app/views/home/index.html.php on line 4
+[11-May-2011 12:18:08] PHP Fatal error:  Call to undefined function symbolicate_url() in /Users/alex/Development/webapp_exceptions_client/app/views/home/index.html.php on line 4
+[11-May-2011 12:18:09] PHP Fatal error:  Call to undefined function symbolicate_url() in /Users/alex/Development/webapp_exceptions_client/app/views/home/index.html.php on line 4
+[11-May-2011 12:18:21] PHP Fatal error:  Call to undefined function symbolicate_url() in /Users/alex/Development/webapp_exceptions_client/app/views/home/index.html.php on line 4
+[11-May-2011 16:32:27] PHP Parse error:  syntax error, unexpected T_ECHO in /Users/alex/Development/webapp_exceptions_client/app/views/crash_reports/show.html.php on line 6

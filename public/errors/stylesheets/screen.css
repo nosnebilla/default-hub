@@ -1,0 +1,166 @@
+@CHARSET "UTF-8";
+
+/* ******************** defaults */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal 1em/1.25em 'Helvetica Neue', 'Arial', 'Helvetica', 'Sans-serif';
+  color: #000;
+  background: url('/errors/images/bg2.gif') #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover, a:focus {
+  color: #000;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+img {
+  border: 0px none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+abbr {
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+hr {
+  display: none;
+}
+
+code, .code {
+  font: normal .9em/1.25em 'Monaco', 'Courier New', 'Courier';
+}
+
+.nodisplay {
+  position: absolute;
+  left: -1000px !important;
+  top: -1000px !important;
+  width: 0px !important;
+  height: 0px !important;
+  overflow: hidden;
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  display: block;
+  clear: both;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  margin: -1px 0 0 0;
+}
+
+/* forms */
+fieldset {
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+input, select {
+  width: 95%;
+}
+
+.checkbox, .radio {
+  width: auto;
+}
+
+input:focus, textarea:focus {
+  background-color: #fff;
+}
+
+.button:focus {
+  background-color: transparent;
+}
+
+/* ******************** page blocks */
+
+#page {
+  background: #fff;
+  margin: 1.5em;
+}
+
+#header {
+  background: #453971;
+  padding: 2em 1.5em;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 200%;
+  color: #fff;
+}
+
+#content {
+  background: url('/errors/images/bg.jpg') #fff;
+  padding: 1em 0;
+}
+
+dt {
+  font-size: 115%;
+  color: #453971;
+  padding-top: .5em;
+  padding-left: 1.5em;
+}
+
+dd {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 3em;
+  border-bottom: 1px solid #aaa;
+}
+
+td {
+  padding: .2em .5em;
+}
+
+thead {
+  font-weight: bold;
+}
+
+/* EOF */
