@@ -1,5 +1,4 @@
-.DS_Store
-config/environment
-releases/*
-tmp/*
-tmp/db/*
+IGNORED_FILE
+IGNORED_FOLDER/IGNORED_FILE_IN_SUBFOLDER
+
+TO_BE_MODIFIED_AND_BOTH_STAGED_AND_UNSTAGED
