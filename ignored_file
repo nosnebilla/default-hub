@@ -1,1 +1,2 @@
-LOCAL:IGNORED_FILE:1
+LOCAL:IGNORED_FILE:1 - this is a change on master_test3
+    and a new line on master_test_3
